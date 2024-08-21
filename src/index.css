@@ -150,6 +150,10 @@ flex-shrink: 2;
   margin-right: 0rem;
   padding: 5px;
 }
+
+.dashboard .dashboard-body{
+  height: 100px;
+}
 /* Sub-Dashboard */
 
 /* Widget */

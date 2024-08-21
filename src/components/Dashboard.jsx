@@ -5,7 +5,7 @@ export default function Dashboard() {
         <div className="title">CNAAP DashBoard</div>
         <div className="buttons">
           <div className="btn" id="add-widget">
-            Add Widget
+            Add Widget &nbsp;
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -23,8 +23,8 @@ export default function Dashboard() {
               fill="currentColor"
               stroke-width="0"
               viewBox="0 -60 512 512"
-              height="1em"
-              width="1em"
+              height="1.1em"
+              width="1.1em"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M256 93.09V32l-80 81.454 80 81.456v-61.093c65.996 0 120 54.982 120 122.183 0 20.363-5 39.714-14.004 57.016L391 342.547c15.996-25.457 25-54.988 25-86.547 0-89.599-72.002-162.91-160-162.91zm0 285.094c-66.001 0-120-54.988-120-122.184 0-20.363 5-39.709 13.999-57.02L121 169.454C104.999 193.89 96 224.436 96 256c0 89.599 72.002 162.91 160 162.91V480l80-81.453-80-81.457v61.094z"></path>
             </svg>
@@ -35,8 +35,8 @@ export default function Dashboard() {
               fill="currentColor"
               stroke-width="0"
               viewBox="0 -1.5 16 16"
-              height="1em"
-              width="1em"
+              height="1.1em"
+              width="1.1em"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"></path>
             </svg>
@@ -64,12 +64,12 @@ export default function Dashboard() {
               xmlns="http://www.w3.org/2000/svg">
               <path d="M12 5v14"></path>
             </svg>
-            Last 2 days
+            Last 2 days &nbsp;
             <svg
               stroke="currentColor"
               fill="currentColor"
               stroke-width="0"
-              viewBox="100 -30 100 400"
+              viewBox="80 -30 100 400"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,6 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-
       <div className="dashboard-body">body</div>
     </section>
   );
