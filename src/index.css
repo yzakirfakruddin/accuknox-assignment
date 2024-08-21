@@ -20,6 +20,11 @@
   }
 }
 
+@media (max-width:1680px){
+  .widget-container {
+    width: 97%;
+  }
+}
 
 /* Navigation bar */ 
 .navbar {
@@ -76,16 +81,15 @@
 /* Dashboard */
 .dashboard {
   background-color: rgb(227, 231, 233);
+  width: 100%;
     
   /* padding given for the navbar */
   padding-top: 2.8rem; 
-  width: 100%;
-  height: 1000px;
 }
 
 .dashboard .dashboard-head {
   height: 4.5rem;
-  margin: 2rem 0rem 1rem 0rem;
+  margin: 1rem 0rem 1.7rem 0rem;
 
   display: flex;
   flex-flow: row nowrap;
@@ -95,6 +99,7 @@
 
 .dashboard-head .title {
 font-weight: 700;
+font-size: 1.5rem;
 margin-left: 1rem;
 white-space: nowrap;
 
@@ -119,41 +124,119 @@ flex-shrink: 2;
 .dashboard-head .btn {  
   background-color: rgb(252, 252, 238);
   margin-right: 0.8rem;
+  padding: 4px;
   cursor: pointer;
   white-space: nowrap;
 }
 
 .dashboard-head .buttons #add-widget{
-  border: 2px solid rgb(186, 186, 186);
-  display: inline-block;
+  border: 1px solid rgb(186, 186, 186);
   border-radius: 5px;
-  padding: 5px;
 }
 
 .dashboard-head .buttons #refresh{
-  border: 2px solid rgb(186, 186, 186);
+  border: 1px solid rgb(186, 186, 186);
   border-radius: 5px;
-  padding: 5px;
 }
 
 .dashboard-head .buttons #more{
-  border: 2px solid rgb(186, 186, 186);
+  border: 1px solid rgb(186, 186, 186);
   border-radius: 5px;
-  padding: 5px;
 }
 
 .dashboard-head .buttons #date{
-  border: 2px solid rgb(32, 26, 141);
+  border: 1px solid rgb(32, 26, 141);
   border-radius: 5px;
   color: rgb(32, 26, 141);
   font-weight: 600;
   margin-right: 0rem;
-  padding: 5px;
 }
 
 .dashboard .dashboard-body{
-  height: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items:center;
 }
-/* Sub-Dashboard */
+
+
+
+/* widget-container */
+.widget-container {
+  background-color: rgba(242, 242, 232, 0.792);
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding:1rem;
+}
+
+.widget-container-title{
+  font-weight: 600;
+}
+
+.widget-container-body{
+  background-color: rgba(152, 195, 247, 0.253);
+  border-radius: 2rem;
+  width: 100%;
+  padding: 0.5rem; 
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 
 /* Widget */
+.widget {
+  border-radius: 1.7rem;
+  background-color: #f6f6f6;
+  width: 30rem;
+  height: 20rem;
+  margin: 0.5rem;
+  padding: 1.5rem;
+}
+
+.widget-title {
+  border: 2px solid black;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  height: 12%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.widget .widget-body {
+  border: 2px solid black;
+  height: 82%;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Empty Widget */
+.empty-widget{
+  border-radius: 1.7rem;
+  background-color: #f6f6f6;
+  width: 30rem;
+  height: 20rem;
+  margin: 0.5rem;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-widget .empty-widget-btn {
+  border: 2px solid rgb(186, 186, 186);
+  color:rgb(139, 139, 139);
+  border-radius: 5px;
+  padding: 5px;
+}
