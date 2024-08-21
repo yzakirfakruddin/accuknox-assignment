@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif,Arial, Helvetica;
+}
+
+@media (max-width:450px) {
+  /* Navigation bar */ 
+  .navbar .search-bar {
+    order: 500;
+    width: 0.2rem;
+    height: auto;
+  }
+}
+
+@media (min-width:600px){
+  .dashboard .buttons {
+    justify-content: end !important;
+  }
+}
+
+
+/* Navigation bar */ 
+.navbar {
+  background-color: white;
+  padding: 0px 10px;
+  width: 100%;
+  height: 2.8rem;
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.navbar .title {  
+  font-weight: 600;
+  color: rgb(41, 41, 213);
+
+  flex-shrink: 1;
+  flex-grow: 3;
+}
+
+.navbar .search-bar {
+  flex-shrink: 2;
+  flex-grow: 2;
+}
+
+.navbar .search-bar-input {
+  border: 2px solid rgb(160, 159, 159);
+  border-radius: 5px;
+  width:100%;
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+.navbar .more-items{
+  flex-shrink: 1;
+  flex-grow: 1;
+  
+  /* new felx for icons */  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+.navbar .icons{
+  cursor: pointer;
+}
+
+
+
+/* Dashboard */
+.dashboard {
+  background-color: rgb(227, 231, 233);
+    
+  /* padding given for the navbar */
+  padding-top: 2.8rem; 
+  width: 100%;
+  height: 1000px;
+}
+
+.dashboard .dashboard-head {
+  height: 4.5rem;
+  margin: 2rem 0rem 1rem 0rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-head .title {
+font-weight: 700;
+margin-left: 1rem;
+white-space: nowrap;
+
+flex-grow: 1;
+flex-shrink: 2;
+}
+
+.dashboard-head .buttons {
+  margin: 0rem 1rem;
+  height: 100%;
+  flex-grow: 3;
+  flex-shrink: 1;
+
+  /* new felx for buttons */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.dashboard-head .btn {  
+  background-color: rgb(252, 252, 238);
+  margin-right: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dashboard-head .buttons #add-widget{
+  border: 2px solid rgb(186, 186, 186);
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dashboard-head .buttons #refresh{
+  border: 2px solid rgb(186, 186, 186);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dashboard-head .buttons #more{
+  border: 2px solid rgb(186, 186, 186);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dashboard-head .buttons #date{
+  border: 2px solid rgb(32, 26, 141);
+  border-radius: 5px;
+  color: rgb(32, 26, 141);
+  font-weight: 600;
+  margin-right: 0rem;
+  padding: 5px;
+}
+/* Sub-Dashboard */
+
+/* Widget */
