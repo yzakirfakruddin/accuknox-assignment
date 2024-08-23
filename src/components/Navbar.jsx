@@ -13,10 +13,10 @@ export default function Navbar() {
         <svg
           stroke="currentColor"
           fill="none"
-          stroke-width="2"
+          strokeWidth="2"
           viewBox="0 0 24 24"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="icons"
           height="1.3em"
           width="1.3em"
@@ -29,7 +29,7 @@ export default function Navbar() {
         <svg
           stroke="currentColor"
           fill="currentColor"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="0 0 24 24"
           className="icons"
           height="1.5em"

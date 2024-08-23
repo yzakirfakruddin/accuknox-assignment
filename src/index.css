@@ -1,12 +1,9 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif,Arial, Helvetica;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width:450px) {
-  /* Navigation bar */ 
   .navbar .search-bar {
     order: 500;
     width: 0.2rem;
@@ -26,7 +23,6 @@
   }
 }
 
-/* Navigation bar */ 
 .navbar {
   background-color: white;
   padding: 0px 10px;
@@ -34,7 +30,6 @@
   height: 2.8rem;
   position: fixed;
   top: 0;
-
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -43,7 +38,6 @@
 .navbar .title {  
   font-weight: 600;
   color: rgb(41, 41, 213);
-
   flex-shrink: 1;
   flex-grow: 3;
 }
@@ -63,9 +57,7 @@
 
 .navbar .more-items{
   flex-shrink: 1;
-  flex-grow: 1;
-  
-  /* new felx for icons */  
+  flex-grow: 1; 
   display: flex;
   flex-flow: row nowrap;
   justify-content:space-evenly;
@@ -76,21 +68,15 @@
   cursor: pointer;
 }
 
-
-
-/* Dashboard */
 .dashboard {
   background-color: rgb(227, 231, 233);
   width: 100%;
-    
-  /* padding given for the navbar */
   padding-top: 2.8rem; 
 }
 
 .dashboard .dashboard-head {
   height: 4.5rem;
   margin: 1rem 0rem 1.7rem 0rem;
-
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -102,7 +88,6 @@ font-weight: 700;
 font-size: 1.5rem;
 margin-left: 1rem;
 white-space: nowrap;
-
 flex-grow: 1;
 flex-shrink: 2;
 }
@@ -112,8 +97,6 @@ flex-shrink: 2;
   height: 100%;
   flex-grow: 3;
   flex-shrink: 1;
-
-  /* new felx for buttons */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -158,9 +141,6 @@ flex-shrink: 2;
   align-items:center;
 }
 
-
-
-/* widget-container */
 .widget-container {
   background-color: rgba(242, 242, 232, 0.792);
   border-radius: 2rem;
@@ -176,16 +156,13 @@ flex-shrink: 2;
   background-color: rgba(152, 195, 247, 0.253);
   border-radius: 2rem;
   width: 100%;
-  padding: 0.5rem; 
-
+  padding: 0.5rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
 }
 
-
-/* Widget */
 .widget {
   border-radius: 1.7rem;
   background-color: #f6f6f6;
@@ -193,10 +170,10 @@ flex-shrink: 2;
   height: 20rem;
   margin: 0.5rem;
   padding: 1.5rem;
+  border: none;
 }
 
 .widget-title {
-  border: 2px solid black;
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
@@ -207,19 +184,15 @@ flex-shrink: 2;
 }
 
 .widget .widget-body {
-  border: 2px solid black;
   height: 82%;
   width: 100%;
   overflow: hidden;
-
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
-
-/* Empty Widget */
 .empty-widget{
   border-radius: 1.7rem;
   background-color: #f6f6f6;
@@ -227,7 +200,6 @@ flex-shrink: 2;
   height: 20rem;
   margin: 0.5rem;
   padding: 1.5rem;
-
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -239,4 +211,81 @@ flex-shrink: 2;
   color:rgb(139, 139, 139);
   border-radius: 5px;
   padding: 5px;
+  cursor: pointer;
+}
+
+.add-widget{
+  margin-right: 1.3rem;
+  margin-top: 1.3rem;
+  padding: 0px;
+  height: 100vh;
+  width: 40vw;
+  position: relative;
+}
+
+.add-widget::backdrop {
+  background-color: rgba(0, 0, 0, 0.532);
+}
+
+.add-widget-head{
+  position: absolute;
+  background-color: blue;
+  color: white;
+  height: 2rem;
+  width: 100%;
+  top: 0;
+  padding-left: 1.5rem;
+  align-content: center;
+}
+
+.add-widget-body{
+  position: relative;
+  height: 93%;
+  margin-top: 2.8rem;
+  padding-left: 1rem;
+}
+
+.add-widget-category{
+  height: 2rem;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.add-widget-category button {
+  background-color: white;
+  color: gray;
+  border: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.2rem;
+  padding: 0.4rem 1rem;
+}
+
+.add-widget-category button:hover{
+  border-bottom: 0.1rem solid blue;
+  color: blue;
+}
+
+.add-widget-buttons {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  
+}
+
+.add-widget-buttons button {
+  padding: 0.2rem 1rem;
+  margin: 0rem 1rem 0.6rem 0rem;
+  border-radius: 0.4rem;
+  border: 1px solid blue;
+  background-color: white;
+}
+
+#cancle {
+  color: blue;
+}
+
+#confirm {
+  background-color: blue;
+  color: white;
 }

@@ -1,11 +1,11 @@
-export default function EmptyWidget() {
+export default function EmptyWidget({ handleAddWidget }) {
   return (
     <section className="empty-widget">
-      <div className="empty-widget-btn">
+      <div className="empty-widget-btn" onClick={handleAddWidget}>
         <svg
           stroke="currentColor"
           fill="currentColor"
-          stroke-width="0"
+          strokeWidth="0"
           viewBox="-80 -60 448 512"
           height="1em"
           width="1em"
