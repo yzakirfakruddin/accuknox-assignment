@@ -118,7 +118,7 @@ const AddWidget = forwardRef(function AddWidget(
         <div className="add-widget-widgets">
           {showCSPM &&
             Object.keys(checkboxCSPM).map((key) => (
-              <div key={key}>
+              <div key={key} className="add-widget-widgets-checkbox">
                 <input
                   type="checkbox"
                   name={key}
@@ -130,7 +130,7 @@ const AddWidget = forwardRef(function AddWidget(
             ))}
           {showCWPP &&
             Object.keys(checkboxCWPP).map((key) => (
-              <div key={key}>
+              <div key={key} className="add-widget-widgets-checkbox">
                 <input
                   type="checkbox"
                   name={key}
@@ -142,7 +142,7 @@ const AddWidget = forwardRef(function AddWidget(
             ))}
           {showImage &&
             Object.keys(checkboxImage).map((key) => (
-              <div key={key}>
+              <div key={key} className="add-widget-widgets-checkbox">
                 <input
                   type="checkbox"
                   name={key}
@@ -154,7 +154,7 @@ const AddWidget = forwardRef(function AddWidget(
             ))}
           {showTicket &&
             Object.keys(checkboxTicket).map((key) => (
-              <div key={key}>
+              <div key={key} className="add-widget-widgets-checkbox">
                 <input
                   type="checkbox"
                   name={key}

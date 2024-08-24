@@ -84,12 +84,12 @@
 }
 
 .dashboard-head .title {
-font-weight: 700;
-font-size: 1.5rem;
-margin-left: 1rem;
-white-space: nowrap;
-flex-grow: 1;
-flex-shrink: 2;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  white-space: nowrap;
+  flex-grow: 1;
+  flex-shrink: 2;
 }
 
 .dashboard-head .buttons {
@@ -219,7 +219,7 @@ flex-shrink: 2;
   margin-top: 1.3rem;
   padding: 0px;
   height: 100vh;
-  width: 40vw;
+  width: 50vw;
   position: relative;
 }
 
@@ -246,9 +246,7 @@ flex-shrink: 2;
 }
 
 .add-widget-category{
-  height: 2rem;
-  width: 100%;
-  border-bottom: 1px solid lightgray;
+  height: 3rem;
 }
 
 .add-widget-category button {
@@ -264,6 +262,11 @@ flex-shrink: 2;
 .add-widget-category button:hover{
   border-bottom: 0.1rem solid blue;
   color: blue;
+}
+
+.add-widget-widgets {
+  margin-top: auto;
+  margin-left: auto;
 }
 
 .add-widget-buttons {
