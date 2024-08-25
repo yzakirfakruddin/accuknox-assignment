@@ -1,5 +1,6 @@
 To View the project go to : https://accuknox-assignment-five.vercel.app/
-if you are viewing the project in local machine then follow the below steps:
+
+If you are viewing the project in local machine then follow the below steps:
     * first download the zip file form this repository and extract all the files.
     * The open the file in any code editor and move to the root directory which contains package.json
     * Now you need to open the terminal to install all the dependencies to run the project.
